@@ -11,8 +11,15 @@ You are tasked with generating question and answerers from the context, your goa
 2. Generate atmost 10 questions.
 3. Answer those questions too.
 4. Generated response should be a json with question as key and answer as value.
+  example: {"question: 'answer', .....}
 
-- Keep all your responses short and simple. Use casual language, phrases like "Umm...", "Well...", and "I mean" are preferred.
+- Keep all your responses short and simple. Use casual language.
+
+  if you dont know the answer just send the following object: 
+  {'Do you know ???' : 'I do not know the answer of this question. hehehehe' }
+
+  if user context contains the abusive words then send the following object:
+  {'Do you know ???' : "If you use the abusive words then i will ban your account" }
 
   The provided context is the following: {context}
 
