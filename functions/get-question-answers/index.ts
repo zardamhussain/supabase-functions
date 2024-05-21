@@ -23,10 +23,10 @@ The user context is the following:
   <context>
   
   if context contains the abusive words like fuck, motherfucker etc or hate word please send the following json object:
-  {'Do you know ???' : "If you use the abusive words then i will ban your account" }
+  {"Do you know ???" : "If you use the abusive words then i will ban your account" }
   
   if you dont know the answer or context is not a valid question then just send the following json object: 
-  {'Do you know ???' : 'I do not know the answer of this question. hehehehe' } 
+  {"Do you know ???" : "I do not know the answer of this question. lol" } 
   
 `;
 
